@@ -1,48 +1,58 @@
+html, body {
+    height: 100vh;
+}
+
 .nav-bar {
-    width: 33%;
-    float: right;
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+}
+
+body {
+    background-image: url(../images/gravel.png)
+}
+
+header {
+    height: 10%;
+    width: 100vw;
     background-color:#ffffff;
-    margin: 0;
-    padding-top: 50px;
 }
 
-nav ul {
-    list-style: none; 
-    margin-left: 20px;
+.links {
+    float: right;
+    margin-top: 20px;
+    padding: 30px;
+    font-size: 20px;
 }
 
-nav li {
-    display: inline-block;
-    margin-left: 20px;
-}
-
-nav a {
+a {
     color: #777777;
     text-decoration: none;
+    padding: 20px;
+    text-align: center;
 }
 
-#name {
+.name {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #ffffff;
     text-align: center;
-    vertical-align: middle;
-    background-image: none;
     background-color: #4aaaa5 ;
-    width: 220px;
-    height: 100px;
-    position: relative;
-    left: 120px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 30%;
+    height: 100%;
+    float: left;
 }
 
+#name {
+    padding: 10% 0;
+    font-size: 32px;
+}
 
 #about-me {
     color: #4aaaa5;
     font-family: Arial, Helvetica, sans-serif;
     padding: 20px;
-    font-size: 32px;
+    font-size: 50px;
     font-weight: bold;
     color: teal;
     margin: 20px;
@@ -57,17 +67,6 @@ p {
     padding: 10px;
 }
 
-.big-middle {
-    border-top: 4px solid #dddddd;
-    margin: 0 auto;
-    padding: 50px;
-    padding-bottom: 100px;
-    position: relative;
-    background-repeat: repeat;
-    height: 100vh;  
-    background-color: #cccccc;
-}
-
 .background {
     margin: 0 auto;
     position: relative;
@@ -77,14 +76,17 @@ p {
 
 .main {
     background-color: #ffffff;
-    width: 800px;
-    margin: 0 auto;
-    height: 400px;
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
     position: relative;
     bottom: 0px;  
+    height: 500px;
+    box-shadow: #666666;
+    box-shadow: 50px;
 }
 
-img {
+#profile-pic {
     float: left;
     height: 210px;
     padding: 20px;
@@ -104,6 +106,9 @@ footer {
 h3 {
     align-content: center;
     text-align: center;
+    color: white;
+    margin-top: 25px;
+  
 }
 
 /* contact editing starts here */
@@ -146,4 +151,14 @@ form {
     margin-top: 150px;
     border: 2px solid teal;
     background-color: #fff;
+}
+
+/* portfolio editing starts here */
+
+img {
+    float: left;
+    height: 150px;
+    padding: 20px;
+    padding-top: 13px;
+    width: 150px;
 }
